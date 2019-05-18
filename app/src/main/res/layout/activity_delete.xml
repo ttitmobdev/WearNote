@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.wear.widget.BoxInsetLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeleteActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:boxedEdges="all"
+        tools:ignore="MissingPrefix">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Deleting message!"/>
+
+        <android.support.wearable.view.DelayedConfirmationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/del"
+            android:src="@drawable/ic_close_black_24dp"
+            android:padding="20dp"
+            app:circle_radius="56dp"
+            app:circle_border_color="@color/blue"
+            app:circle_border_width="8dp"
+            app:boxedEdges="all"
+            tools:ignore="MissingPrefix"/>
+
+    </LinearLayout>
+
+</android.support.wear.widget.BoxInsetLayout>
